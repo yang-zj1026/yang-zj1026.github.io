@@ -21,9 +21,9 @@ social: true  # includes social icons at the bottom of the page
 ---
 
 Hi! I'm a second-year MSCS student at USC. 
-I am fortunate to work with [Erdem Biyik](https://ebiyik.github.io/) at [LiraLab](https://liralab.usc.edu/)
-and with [Zhehui Huang](https://zhehui-huang.github.io/) and [Gaurav Sukhatme](https://viterbi.usc.edu/directory/faculty/Sukhatme/Gaurav) 
-at [RESL](https://robotics.usc.edu/resl/).
+I am fortunate to work with [Zhehui Huang](https://zhehui-huang.github.io/) and [Prof.Gaurav Sukhatme](https://viterbi.usc.edu/directory/faculty/Sukhatme/Gaurav) 
+at [RESL](https://robotics.usc.edu/resl/) and with [Prof.Erdem Biyik](https://ebiyik.github.io/) at [LiraLab](https://liralab.usc.edu/)
+.
 Prior to USC, I received my B.Eng. degree in Computer Science at Shanghai Jiao Tong University.
 
 
