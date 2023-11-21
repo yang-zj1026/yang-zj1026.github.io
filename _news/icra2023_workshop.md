@@ -5,6 +5,6 @@ inline: true
 related_posts: false
 ---
 
-Our paper _"QuadSwarm: A Modular Multi-Quadrotor Simulator for Deep Reinforcement Learning with Direct Thrust Control"_
+Our paper ["QuadSwarm: A Modular Multi-Quadrotor Simulator for Deep Reinforcement Learning with Direct Thrust Control"](https://arxiv.org/pdf/2306.09537)
 is accepted by ICRA 2023 Workshop: The Role of Robotics Simulators for Unmanned Aerial Vehicles.
 
