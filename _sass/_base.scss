@@ -19,6 +19,14 @@ strong {
   color: var(--global-text-color);
 }
 
+body {
+  font-family: 'Asap', roboto, sans-serif;
+}
+
+p {
+  font-weight: 300;
+}
+
 hr {
   border-top: 1px solid var(--global-divider-color);
 }
@@ -660,6 +668,7 @@ footer.sticky-bottom {
 
     li {
       margin-bottom: 1rem;
+      color: var(--global-text-color-light);
 
       .preview {
         width: 100%;
@@ -694,6 +703,7 @@ footer.sticky-bottom {
 
       .title {
         font-weight: bolder;
+        color: var(--global-text-color);
       }
 
       .author {
@@ -706,9 +716,12 @@ footer.sticky-bottom {
           }
         }
 
+        color: var(--global-text-color-light);
+
         >em {
           border-bottom: 1px solid;
           font-style: normal;
+          color: var(--global-text-color-light);
         }
 
         >span.more-authors {
@@ -732,6 +745,7 @@ footer.sticky-bottom {
           padding-top: 0.25rem;
           padding-bottom: 0.25rem;
           margin-left: 0;
+          font-weight: 400;
 
           &:hover {
             color: var(--global-theme-color);

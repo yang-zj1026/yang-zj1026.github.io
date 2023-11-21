@@ -2,11 +2,12 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+subtitle: RL • Robotics
 
 profile:
   align: right
   image: my_pic.jpg
+  hover_image: my_pic_hover.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
     <p></p>
@@ -19,7 +20,10 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Hi! I'm a MSCS student at University of Southern California. 
+Hi! I'm a second-year MSCS student at USC. 
+I am fortunate to work with [Erdem Biyik](https://ebiyik.github.io/) at [LiraLab](https://liralab.usc.edu/)
+and with [Zhehui Huang](https://zhehui-huang.github.io/) and [Gaurav Sukhatme](https://viterbi.usc.edu/directory/faculty/Sukhatme/Gaurav) 
+at [RESL](https://robotics.usc.edu/resl/).
 Prior to USC, I received my B.Eng. degree in Computer Science at Shanghai Jiao Tong University.
 
 
