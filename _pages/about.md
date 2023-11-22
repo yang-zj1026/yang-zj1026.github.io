@@ -1,6 +1,6 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
 subtitle: RL • Robotics
 
@@ -24,13 +24,12 @@ Hi! I'm a second-year MSCS student at USC.
 I am fortunate to work with [Zhehui Huang](https://zhehui-huang.github.io/) and [Prof.Gaurav Sukhatme](https://viterbi.usc.edu/directory/faculty/Sukhatme/Gaurav) 
 at [RESL](https://robotics.usc.edu/resl/) and with [Prof.Erdem Biyik](https://ebiyik.github.io/) at [LiraLab](https://liralab.usc.edu/)
 .
-Prior to USC, I received my B.Eng. degree in Computer Science at Shanghai Jiao Tong University.
+Prior to USC, I received my BEng degree in Computer Science at Shanghai Jiao Tong University.
 
 
 My research interest lies at the intersection of Reinforcement Learning and Robotics. 
-I’m interested in applying learning method for optimal robot policies in both simulator and real-world. 
-I have experience in Deep RL for quadrotor control and autonomous driving. 
-In the future, I’m aspiring to explore other learning methods like combining RL with IL, learning from human demonstration and utilizing LLM for robot assistance. 
+I’m interested in applying learning method for optimal robot policies in both simulator and real-world.
+In the future, I’m aspiring to explore other learning methods like learning from human demonstration and feedback and utilizing LLM for robot assistance
 
 [//]: # (Write your biography here. Tell the world about yourself. Link to your favorite [subreddit]&#40;http://reddit.com&#41;. You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.)
 

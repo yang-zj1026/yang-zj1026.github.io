@@ -19,14 +19,6 @@ strong {
   color: var(--global-text-color);
 }
 
-body {
-  font-family: 'Asap', roboto, sans-serif;
-}
-
-p {
-  font-weight: 300;
-}
-
 hr {
   border-top: 1px solid var(--global-divider-color);
 }
@@ -218,6 +210,15 @@ blockquote {
   }
 }
 
+.clearfix{
+  p{
+    font-weight: bolder;
+  }
+}
+
+.news{
+  font-weight: bolder;
+}
 
 // Navbar customization
 
@@ -514,6 +515,11 @@ footer.sticky-bottom {
   }
 }
 
+.desc {
+    color: var(--global-text-color-light);
+    font-size: 1.0rem;
+}
+
 .post-list {
   margin: 0;
   margin-bottom: 40px;
@@ -646,7 +652,6 @@ footer.sticky-bottom {
 
   h2 {
     margin-bottom: 1rem;
-
     span {
       font-size: 1.5rem;
     }
@@ -717,6 +722,7 @@ footer.sticky-bottom {
         }
 
         color: var(--global-text-color-light);
+        font-weight: 400;
 
         >em {
           border-bottom: 1px solid;
