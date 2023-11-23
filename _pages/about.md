@@ -20,16 +20,15 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Hi! I'm a second-year MSCS student at USC. 
-I am fortunate to work with [Zhehui Huang](https://zhehui-huang.github.io/) and [Prof.Gaurav Sukhatme](https://viterbi.usc.edu/directory/faculty/Sukhatme/Gaurav) 
-at [RESL](https://robotics.usc.edu/resl/) and with [Prof.Erdem Biyik](https://ebiyik.github.io/) at [LiraLab](https://liralab.usc.edu/)
-.
+Hi! I am a second-year MSCS student at USC. 
+I'm fortunate to work with [Zhehui Huang](https://zhehui-huang.github.io/) and [Prof. Gaurav Sukhatme](https://viterbi.usc.edu/directory/faculty/Sukhatme/Gaurav) 
+at [RESL](https://robotics.usc.edu/resl/) and with [Prof. Erdem Bıyık](https://ebiyik.github.io/) at [LiraLab](https://liralab.usc.edu/).
 Prior to USC, I received my BEng degree in Computer Science at Shanghai Jiao Tong University.
 
 
 My research interest lies at the intersection of Reinforcement Learning and Robotics. 
-I’m interested in applying learning method for optimal robot policies in both simulator and real-world.
-In the future, I’m aspiring to explore other learning methods like learning from human demonstration and feedback and utilizing LLM for robot assistance
+I’m interested in applying learning methods for optimal robot policies in both simulator and real-world.
+In the future, I’m aspiring to explore other methods like learning from human feedback and utilizing LLM for robot assistance
 
 [//]: # (Write your biography here. Tell the world about yourself. Link to your favorite [subreddit]&#40;http://reddit.com&#41;. You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.)
 
