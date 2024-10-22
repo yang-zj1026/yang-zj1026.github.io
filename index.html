@@ -44,17 +44,12 @@
       .content-div {height: 2em}
       .small-div {height: 0.5em}
 
-      body {
-        max-width: 980px; /* Adjust this value as needed */
-        margin: 0 auto;
-        padding: 0 15px;
-      }
-
       .container {
         width: 100%;
-        max-width: 100%;
-        padding-left: 15px;
-        padding-right: 15px;
+        padding-left: 60px;
+        padding-right: 60px;
+		margin-left: auto;
+		margin-right: auto;
       }
 	</style>
 	<!-- Bootstrap -->
@@ -73,128 +68,126 @@
 	<script src="res/js/bootstrap.min.js"></script>
 </head>
 
-<body>
-	<div class="header">
-		<div class="container">
-			<div class="content-div"></div>
-			<div class="row align-items-center">
-				<div class="col-md-3 align-column-center">
-					<center>
-						<img class="img-fluid" src="res/figs/my_pic.jpg"
-						     style="border-radius:10px; border:1px; margin-bottom: 5px" width=100%" alt="">
-					</center>
-				</div>
-				<div class="col-md-9 align-column-center">
-					<h2> Zhaojing Yang </h2>
-					<a href="https://scholar.google.com/citations?hl=en&authuser=1&user=Olo1IfYAAAAJ" target="_blank"> [Google Scholar] </a>
-					<a href="https://github.com/yang-zj1026" target="_blank"> [GitHub] </a>
-					<a href="/res/pdf/CV_Zhaojing_Oct_2024.pdf" target="_blank"> [CV] </a>
-
-					<div class="small-div"></div>
-					Hi! I'm currently a visiting student as UCSD advised by <a href="https://xiaolonw.github.io" target="_blank">
-					Prof. Xiaolong Wang</a>. My research interests lie in Reinforcement Learning 
-					and Robotics. I'm interested in applying learning methods for optimal robot policies in both simulator and real-world.
-					
-					<div class="small-div"></div>
-					I earned my MSCS degree from USC, where I was fortunate to work with <a href="https://ebiyik.github.io">Prof. Erdem Bıyık</a> and 
-					<a href="https://uscresl.org/principal-investigator/">Prof. Gaurav Sukhatme</a>. Prior to USC, I received my BEng degree in Computer Science at Shanghai Jiao Tong University.
-				</div>
-			</div>
-		</div>
-	</div>
-
+<div class="header">
 	<div class="container">
-		<h3> News </h3>
-		<ul>
-			<li>
-				Oct 2024: Our paper on <a href="http://liralab.usc.edu/comparative-language-feedback/">Learning from Comparative Language Feedback</a> was accepted to CoRL 2024!
-			</li>
-
-			<li>
-				Jan 2024: Our paper on <a href="https://sites.google.com/view/obst-avoid-swarm-rl">Quadrotors Collision Avoidance and Local Navigation</a> was accepted to ICRA 2024!
-			</li>
-		</ul>
 		<div class="content-div"></div>
-	</div>
-
-
-	<div class="container">
-		<!-- publications come here -->
-		<h3> Publications</h3>
-		<font size="3" style="font-weight:normal">&nbsp; * denotes equal contribution</font>
-		<!---- Last Count is Jul 10 ---->
-		<div style="color:white"> <font size="3"> Code Release Progress: 14 / 18 (77.8%). </font></div>
-		<div class="small-div"></div>
-
-		<!------------------------- CoRL 24 --------------------------------->
 		<div class="row align-items-center">
 			<div class="col-md-3 align-column-center">
 				<center>
-					<img class="img-fluid" src="res/figs/comp_lang.png"
-						     style="border-radius:5px solid black" width="100%" alt="">
+					<img class="img-fluid" src="res/figs/my_pic.jpg"
+							style="border-radius:10px; border:1px; margin-bottom: 5px" width=100%" alt="">
 				</center>
 			</div>
-			<div class="col-md-9">
-				<font size="4"> <b> Trajectory Improvement and Reward Learning from Comparative Language Feedback </b></font><br>
-				<font size="3">
-					<b>Zhaojing Yang</b>,
-					<a href="https://scholar.google.com/citations?user=AalqHJ4AAAAJ&hl=en" target="_blank">Miru Jun</a>,
-					<a href="https://www.linkedin.com/in/jeremy-tien/" target="_blank">Jeremy Tien</a>,
-					<a href="https://people.eecs.berkeley.edu/~anca/" target="_blank">Anca Dragan</a>,
-					<a href="https://people.eecs.berkeley.edu/~russell/" target="_blank">Stuart Russell</a>,
-					<a href="https://ebiyik.github.io" target="_blank">Erdem Bıyık</a>
-				</font>
-				<br>
-				CoRL 2024<br>
-				HRI 2024 Human-Interactive Robot Learning Workshop<br>
-				<a href="https://arxiv.org/abs/2410.06401" target="_blank"> [Paper] </a>
-				<a href="https://github.com/USC-Lira/language-preference-learning" target="_blank"> [Code] </a>
-				<a href="http://liralab.usc.edu/comparative-language-feedback/" target="_blank"> [Website] </a>
+			<div class="col-md-9 align-column-center">
+				<h2> Zhaojing Yang </h2>
+				<a href="https://scholar.google.com/citations?hl=en&authuser=1&user=Olo1IfYAAAAJ" target="_blank"> [Google Scholar] </a>
+				<a href="https://github.com/yang-zj1026" target="_blank"> [GitHub] </a>
+				<a href="/res/pdf/CV_Zhaojing_Oct_2024.pdf" target="_blank"> [CV] </a>
+
+				<div class="small-div"></div>
+				Hi! I'm currently a visiting student as UCSD advised by <a href="https://xiaolonw.github.io" target="_blank">
+				Prof. Xiaolong Wang</a>. My research interests lie in Reinforcement Learning 
+				and Robotics. I'm interested in applying learning methods for optimal robot policies that can be deployed in the real world.
+				
+				<div class="small-div"></div>
+				I earned my MSCS degree from USC, where I worked with <a href="https://ebiyik.github.io">Prof. Erdem Bıyık</a> and 
+				<a href="https://uscresl.org/principal-investigator/">Prof. Gaurav Sukhatme</a>. Prior to USC, I received my BEng degree in Computer Science at Shanghai Jiao Tong University.
 			</div>
 		</div>
-		<div class="content-div"></div>
-
-		<!------------------------- ICRA 24 --------------------------------->
-		<div class="row align-items-center">
-			<div class="col-md-3 align-column-center">
-				<center>
-					<img class="img-fluid" src="res/figs/quad_avoid.png"
-						     style="border-radius:4px; border: 1px" width="100%" alt="">
-				</center>
-			</div>
-			<div class="col-md-9">
-				<font size="4"> <b> Collision Avoidance and Navigation for a Quadrotor Swarm Using End-to-end Deep Reinforcement Learning </b></font><br>
-				<font size="3">
-					<a href="https://zhehui-huang.github.io" target="_blank">Zhehui Huang</a>*,
-					<b>Zhaojing Yang</b>*,
-					<a href="https://www.linkedin.com/in/rahulkrupani/" target="_blank">Rahul Krupani</a>,
-					<a href="https://baskin.me" target="_blank">Baskın Şenbaşlar</a>,
-					<a href="https://sumeetbatra.github.io" target="_blank">Sumeet Batra</a>,
-					<a href="https://uscresl.org/principal-investigator/" target="_blank">Gaurav Sukhatme</a>
-				</font>
-				<br>
-				ICRA 2024<br>
-				<a href="https://arxiv.org/abs/2309.13285" target="_blank"> [Paper] </a>
-				<a href="https://github.com/Zhehui-Huang/quad-swarm-rl" target="_blank"> [Code] </a>
-				<a href="https://sites.google.com/view/obst-avoid-swarm-rl" target="_blank"> [Website] </a>
-			</div>
-		</div>
-		<div class="content-div"></div>
-
 	</div>
+</div>
 
-	<div class="section-div"></div>
+<div class="container">
+	<h3> News </h3>
+	<ul>
+		<li>
+			Oct 2024: Our paper on <a href="http://liralab.usc.edu/comparative-language-feedback/">Learning from Comparative Language Feedback</a> was accepted to CoRL 2024!
+			Though I cannot attend in person, Erdem will present our work in Munich.
+		</li>
 
-	<!-- Add this new footer section -->
-	<footer class="footer">
-		<div class="container">
-			<hr>
-			<p class="text-muted text-center">
-				Template adapted from <a href="https://haozhi.io" target="_blank">here</a>.
-			</p>
+		<li>
+			Jan 2024: Our paper on <a href="https://sites.google.com/view/obst-avoid-swarm-rl">Quadrotors Collision Avoidance and Local Navigation</a> was accepted to ICRA 2024!
+		</li>
+	</ul>
+	<div class="content-div"></div>
+</div>
+
+
+<div class="container">
+	<!-- publications come here -->
+	<h3> Publications</h3>
+	<font size="3" style="font-weight:normal">&nbsp; * denotes equal contribution</font>
+	<!---- Last Count is Jul 10 ---->
+	<div style="color:white"> <font size="3"> Code Release Progress: 14 / 18 (77.8%). </font></div>
+	<div class="small-div"></div>
+
+	<!------------------------- CoRL 24 --------------------------------->
+	<div class="row align-items-center">
+		<div class="col-md-3 align-column-center">
+			<center>
+				<img class="img-fluid" src="res/figs/comp_lang.png"
+							style="border-radius:5px solid black" width="100%" alt="">
+			</center>
 		</div>
-	</footer>
+		<div class="col-md-9">
+			<font size="4"> <b> Trajectory Improvement and Reward Learning from Comparative Language Feedback </b></font><br>
+			<font size="3">
+				<b>Zhaojing Yang</b>,
+				<a href="https://scholar.google.com/citations?user=AalqHJ4AAAAJ&hl=en" target="_blank">Miru Jun</a>,
+				<a href="https://www.linkedin.com/in/jeremy-tien/" target="_blank">Jeremy Tien</a>,
+				<a href="https://people.eecs.berkeley.edu/~anca/" target="_blank">Anca Dragan</a>,
+				<a href="https://people.eecs.berkeley.edu/~russell/" target="_blank">Stuart Russell</a>,
+				<a href="https://ebiyik.github.io" target="_blank">Erdem Bıyık</a>
+			</font>
+			<br>
+			CoRL 2024<br>
+			HRI 2024 Human-Interactive Robot Learning Workshop<br>
+			<a href="https://arxiv.org/abs/2410.06401" target="_blank"> [Paper] </a>
+			<a href="https://github.com/USC-Lira/language-preference-learning" target="_blank"> [Code] </a>
+			<a href="http://liralab.usc.edu/comparative-language-feedback/" target="_blank"> [Website] </a>
+		</div>
+	</div>
+	<div class="content-div"></div>
 
-</body>
+	<!------------------------- ICRA 24 --------------------------------->
+	<div class="row align-items-center">
+		<div class="col-md-3 align-column-center">
+			<center>
+				<img class="img-fluid" src="res/figs/quad_avoid.png"
+							style="border-radius:4px; border: 1px" width="100%" alt="">
+			</center>
+		</div>
+		<div class="col-md-9">
+			<font size="4"> <b> Collision Avoidance and Navigation for a Quadrotor Swarm Using End-to-end Deep Reinforcement Learning </b></font><br>
+			<font size="3">
+				<a href="https://zhehui-huang.github.io" target="_blank">Zhehui Huang</a>*,
+				<b>Zhaojing Yang</b>*,
+				<a href="https://www.linkedin.com/in/rahulkrupani/" target="_blank">Rahul Krupani</a>,
+				<a href="https://baskin.me" target="_blank">Baskın Şenbaşlar</a>,
+				<a href="https://sumeetbatra.github.io" target="_blank">Sumeet Batra</a>,
+				<a href="https://uscresl.org/principal-investigator/" target="_blank">Gaurav Sukhatme</a>
+			</font>
+			<br>
+			ICRA 2024<br>
+			<a href="https://arxiv.org/abs/2309.13285" target="_blank"> [Paper] </a>
+			<a href="https://github.com/Zhehui-Huang/quad-swarm-rl" target="_blank"> [Code] </a>
+			<a href="https://sites.google.com/view/obst-avoid-swarm-rl" target="_blank"> [Website] </a>
+		</div>
+	</div>
+	<div class="content-div"></div>
+
+</div>
+
+<div class="section-div"></div>
+
+<!-- Add this new footer section -->
+<footer class="footer">
+	<div class="container">
+		<hr>
+		<p class="text-muted text-center">
+			Template adapted from <a href="https://haozhi.io" target="_blank">here</a>.
+		</p>
+	</div>
+</footer>
 
 </html>
