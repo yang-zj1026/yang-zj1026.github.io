@@ -2,320 +2,309 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-	<title>Zhaojing's Homepage</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Zhaojing Yang</title>
+	<meta name="description" content="Zhaojing Yang is a Research Engineer at Meta Superintelligence Labs working on robot learning for humanoid robots.">
+	<link rel="canonical" href="https://yang-zj1026.github.io/">
 
-	<link href="res/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Link preview cards (LinkedIn, X, Slack, iMessage) -->
+	<meta property="og:type" content="profile">
+	<meta property="og:url" content="https://yang-zj1026.github.io/">
+	<meta property="og:title" content="Zhaojing Yang">
+	<meta property="og:description" content="Research Engineer at Meta Superintelligence Labs, working on robot learning for humanoid robots.">
+	<meta property="og:image" content="https://yang-zj1026.github.io/res/figs/my_pic.jpg">
+	<meta property="og:image:alt" content="Photo of Zhaojing Yang">
+	<meta name="twitter:card" content="summary">
 
 	<style>
-      .header {
-        width: 100%;
-        max-width: 100%;
-        font-family: Arial;
-        padding: 2rem 1rem;
-      }
+		:root {
+			--text: #1f2328;
+			--text-soft: #3d444d;
+			--muted: #656d76;
+			--link: #0071bc;
+			--link-hover: #208799;
+			--rule: #e3e6ea;
+			--max-width: 960px;
+			--gutter: 24px;
+		}
 
-      a:link,a:visited
-      {
-        color: #0071bc;
-        text-decoration: none;
-      }
-      a:hover {
-        color: #208799;
-      }
+		*, *::before, *::after { box-sizing: border-box; }
 
-      hr {
-        border: 10;
-        height: 1px;
-        background-image: linear-gradient(to right, rgba(0, 113, 188, 0.2), rgba(0, 0, 0, 0.1), rgba(0, 113, 188, 0.2));
-      }
+		html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 
-      .gap-20 {height:20px;}
-      .gap-10 {height:10px;}
-      .hgap-6perc {width: 6%;}
-      .hgap-7perc {width: 7%;}
+		body {
+			margin: 0;
+			background: #fff;
+			color: var(--text);
+			font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+			font-size: 16px;
+			line-height: 1.6;
+		}
 
-      ::selection {
-        background: rgba(220, 220, 220);
-	  }
+		h1, h2, h3, p { margin: 0; }
+		h1, h2, h3 { font-weight: 600; line-height: 1.25; }
+		img { max-width: 100%; height: auto; }
+		sup { line-height: 0; }
 
-      .section-div {height: 3em}
-      .content-div {height: 2em}
-      .small-div {height: 0.5em}
+		a { color: var(--link); text-decoration: none; }
+		a:hover { color: var(--link-hover); text-decoration: underline; }
 
-      .pub-title-row {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: flex-start;
-        gap: 0.5rem 0.75rem;
-      }
-      .pub-title-row h3 {
-        margin: 0;
-        line-height: 1.2;
-      }
-      .pub-toggle-wrap {
-        display: inline-flex;
-        align-items: center;
-        gap: 0.35rem;
-        flex-shrink: 0;
-        line-height: 1.2;
-        margin-top: 0.2em;
-      }
-      button.pub-toggle-link {
-        background: none;
-        border: none;
-        padding: 0;
-        margin: 0;
-        font: inherit;
-        font-family: Arial, sans-serif;
-        font-size: inherit;
-        line-height: 1.2;
-        color: #0071bc;
-        cursor: pointer;
-        text-decoration: none;
-        vertical-align: middle;
-        outline: none;
-        -webkit-appearance: none;
-        appearance: none;
-      }
-      button.pub-toggle-link:focus,
-      button.pub-toggle-link:focus-visible,
-      button.pub-toggle-link:active {
-        outline: 2px solid transparent;
-        outline-offset: 0;
-        box-shadow: none;
-      }
-      button.pub-toggle-link:hover {
-        color: #208799;
-      }
-      button.pub-toggle-link.active {
-        font-weight: bold;
-      }
-      .pub-panel-hidden { display: none; }
+		::selection { background: rgb(220, 220, 220); }
 
+		.container {
+			max-width: var(--max-width);
+			margin: 0 auto;
+			padding: 0 var(--gutter);
+		}
+
+		/* ---------- Profile ---------- */
+		.profile {
+			display: grid;
+			grid-template-columns: 200px 1fr;
+			gap: 40px;
+			align-items: center;
+			padding-top: 56px;
+		}
+		.profile-photo { text-align: center; }
+		.profile-photo img {
+			display: block;
+			width: 100%;
+			border-radius: 12px;
+		}
+		.photo-credit {
+			display: block;
+			margin-top: 6px;
+			font-size: 12px;
+			color: var(--muted);
+		}
+		.profile h1 { font-size: 2rem; margin-bottom: 6px; }
+		.profile-text p + p { margin-top: 10px; }
+
+		.link-row {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 2px 12px;
+		}
+		.profile .link-row { margin-bottom: 14px; }
+
+		/* ---------- Sections ---------- */
+		section { margin-top: 48px; }
+		.section-head {
+			display: flex;
+			flex-wrap: wrap;
+			align-items: baseline;
+			gap: 4px 14px;
+			padding-bottom: 8px;
+			margin-bottom: 16px;
+			border-bottom: 1px solid var(--rule);
+		}
+		.section-head h2 { font-size: 1.5rem; }
+
+		/* ---------- News ---------- */
+		.news { list-style: none; margin: 0; padding: 0; }
+		.news li {
+			display: grid;
+			grid-template-columns: 84px 1fr;
+			gap: 12px;
+			padding: 4px 0;
+		}
+		.news-date {
+			color: var(--muted);
+			white-space: nowrap;
+			font-variant-numeric: tabular-nums;
+		}
+
+		/* ---------- Publications ---------- */
+		.pub-toggle {
+			background: none;
+			border: none;
+			padding: 0;
+			margin: 0;
+			font: inherit;
+			color: var(--link);
+			cursor: pointer;
+			-webkit-appearance: none;
+			appearance: none;
+		}
+		.pub-toggle:hover { color: var(--link-hover); }
+		.pub-toggle:focus-visible { outline: 2px solid var(--link); outline-offset: 2px; border-radius: 2px; }
+		.pub-toggle.active { font-weight: 600; }
+
+		.pub-note { color: var(--muted); font-size: 0.875rem; margin-bottom: 8px; }
+
+		.pub {
+			display: grid;
+			grid-template-columns: 240px 1fr;
+			gap: 32px;
+			align-items: center;
+			padding: 18px 0;
+		}
+		/* [Selected] view hides entries without the "selected" class */
+		.show-selected .pub:not(.selected) { display: none; }
+
+		.pub-thumb img, .pub-thumb video {
+			display: block;
+			width: 100%;
+			max-height: 190px;
+			object-fit: contain;
+			border-radius: 6px;
+		}
+		.pub-thumb img.framed {
+			aspect-ratio: 7 / 4;
+			border: 1px solid #ccc;
+		}
+		.pub-title { font-size: 1.0625rem; margin-bottom: 4px; }
+		.pub-authors { color: var(--text-soft); font-size: 0.9375rem; }
+		.pub-authors b { color: var(--text); }
+		.pub-venue { color: var(--muted); font-size: 0.9375rem; font-style: italic; }
+		.pub .link-row { margin-top: 4px; }
+
+		/* ---------- Footer ---------- */
+		.footer {
+			margin-top: 56px;
+			padding-top: 20px;
+			padding-bottom: 32px;
+			border-top: 1px solid var(--rule);
+			text-align: center;
+			color: var(--muted);
+			font-size: 0.875rem;
+		}
+
+		/* ---------- Tablet (iPad portrait and smaller laptops) ---------- */
+		@media (max-width: 1024px) {
+			:root { --gutter: 32px; }
+			.profile { grid-template-columns: 170px 1fr; gap: 28px; padding-top: 44px; }
+			.pub { grid-template-columns: 200px 1fr; gap: 24px; }
+			.pub-thumb img, .pub-thumb video { max-height: 160px; }
+		}
+
+		/* ---------- Phone ---------- */
+		@media (max-width: 640px) {
+			:root { --gutter: 16px; }
+			.profile { grid-template-columns: 1fr; gap: 20px; padding-top: 32px; }
+			.profile-photo { width: 160px; margin: 0 auto; }
+			.profile h1 { font-size: 1.75rem; text-align: center; }
+			.profile .link-row { justify-content: center; gap: 0 10px; font-size: 0.9375rem; }
+			.link-row a, .pub-toggle { padding: 4px 0; }
+			section { margin-top: 36px; }
+			.section-head h2 { font-size: 1.375rem; }
+			.news li { grid-template-columns: 72px 1fr; gap: 10px; font-size: 0.9375rem; }
+			.pub { grid-template-columns: 1fr; gap: 12px; padding: 16px 0; }
+			.pub-thumb img, .pub-thumb video { max-height: 220px; }
+		}
 	</style>
-	<!-- Bootstrap -->
-
-	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-	<!--[if lt IE 9]>
-	<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-	<![endif]-->
-
-
-	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	<!-- Include all compiled plugins (below), or include individual files as needed -->
-	<script src="res/js/bootstrap.min.js"></script>
 </head>
 
-<div class="header">
-	<div class="container">
-		<div class="content-div"></div>
-		<div class="row align-items-center">
-			<div class="col-md-3 align-column-center">
-				<center>
-					<img class="img-fluid" src="res/figs/my_pic.png"
-							style="border-radius:10px; border:1px; margin-bottom: 5px; width:76%" alt="">
-				</center>
-			</div>
-			<div class="col-md-9 align-column-center">
-				<h2> Zhaojing Yang </h2>
-				<a href="/res/pdf/CV_Zhaojing_Nov25.pdf" target="_blank"> [CV] </a>
-				<a href="https://scholar.google.com/citations?hl=en&authuser=1&user=Olo1IfYAAAAJ" target="_blank"> [Google Scholar] </a>
-				<a href="https://github.com/yang-zj1026" target="_blank"> [GitHub] </a>
-				<a href="https://x.com/zhaojingy_1026" target="_blank"> [X] </a>
-				<a href="https://linkedin.com/in/zhaojing-yang-4a54712a0/" target="_blank"> [LinkedIn] </a>
+<body>
 
-				<div class="small-div"></div>
-				Hi! I'm a Founding Research Engineer at <a href="https://www.arirobots.com/" target="_blank">Assured Robot Intelligence (ARI)</a>.
-				My research focuses on Robot Learning to bring humanoid robots to real-world applications.
-				
-				<div class="small-div"></div>
-				I've been fortunate to work with <a href="https://xiaolonw.github.io/" target="_blank">Prof. Xiaolong Wang</a> at UCSD, and with <a href="https://ebiyik.github.io/" target="_blank">Prof. Erdem Bıyık</a> and <a href="https://uscresl.org/principal-investigator/" target="_blank">Prof. Gaurav Sukhatme</a> at USC.
-				I received my MSCS degree from USC and my BEng degree in Computer Science from Shanghai Jiao Tong University.
-			</div>
-		</div>
+<header class="container profile">
+	<div class="profile-photo">
+		<img src="res/figs/my_pic.jpg" alt="Zhaojing Yang">
+		<span class="photo-credit">Photo by <a href="https://billy-yibo-yan.github.io/" target="_blank">Billy Yan</a></span>
 	</div>
-</div>
+	<div class="profile-text">
+		<h1>Zhaojing Yang</h1>
+		<nav class="link-row">
+			<a href="/res/pdf/CV_Zhaojing_Oct26.pdf" target="_blank">[CV]</a>
+			<a href="https://scholar.google.com/citations?hl=en&user=Wh77D-MAAAAJ" target="_blank">[Google Scholar]</a>
+			<a href="https://github.com/yang-zj1026" target="_blank">[GitHub]</a>
+			<a href="https://x.com/zhaojingy_1026" target="_blank">[X]</a>
+			<a href="https://linkedin.com/in/zhaojing-yang-4a54712a0/" target="_blank">[LinkedIn]</a>
+		</nav>
+		<p>
+			Hi! I'm a Research Engineer at <a href="https://ai.meta.com/" target="_blank">Meta Superintelligence Labs (MSL)</a>. Previously I was a Founding Research Engineer at <a href="https://www.arirobots.com/" target="_blank">Assured Robot Intelligence (ARI)</a>.
+			My research focuses on Robot Learning to bring humanoid robots to real-world applications.
+		</p>
+		<p>
+			I've been fortunate to work with <a href="https://xiaolonw.github.io/" target="_blank">Prof. Xiaolong Wang</a> at UCSD, and with <a href="https://ebiyik.github.io/" target="_blank">Prof. Erdem Bıyık</a> and <a href="https://uscresl.org/principal-investigator/" target="_blank">Prof. Gaurav Sukhatme</a> at USC.
+			I received my MSCS degree from USC and my BEng degree in Computer Science from Shanghai Jiao Tong University.
+		</p>
+	</div>
+</header>
 
-<div class="container">
-	<h3> News </h3>
-	<ul>
-		<li>
-			[Jan, 2026] Our paper on <a href="https://sites.google.com/view/constrainedexpert">Learning from Constrained Demonstrators</a> was accepted to ICLR 2026. Congrats to Xinhu and the team!
-		</li>
-		<li>
-			[Oct, 2025] Our paper on <a href="https://liralab.usc.edu/comparative-language-feedback/">Active Reward Learning from Language Feedback</a> was accepted to IJRR. Congrats to Eisuke and the team!
-		</li>
-		<li>
-			[May, 2025] I joined ARI as a founding research engineer.
-		</li>
-		<li>
-			[Apr, 2025] <a href="https://navila-bot.github.io/">NaVILA</a> was accepted to RSS 2025. See you in Los Angeles!
-		</li>
-		<li>
-			[Oct, 2024] Our paper on <a href="http://liralab.usc.edu/comparative-language-feedback/">Learning from Comparative Language Feedback</a> was accepted to CoRL 2024!
-		</li>
+<main class="container">
 
+<section>
+	<div class="section-head">
+		<h2>News</h2>
+	</div>
+	<ul class="news">
 		<li>
-			[Jan, 2024] Our paper on <a href="https://sites.google.com/view/obst-avoid-swarm-rl">Quadrotors Collision Avoidance and Local Navigation</a> was accepted to ICRA 2024!
+			<span class="news-date">May 2026</span>
+			<span>I joined MSL following Meta's acquisition of ARI.</span>
+		</li>
+		<li>
+			<span class="news-date">Jan 2026</span>
+			<span>Our paper on <a href="https://sites.google.com/view/constrainedexpert">Learning from Constrained Demonstrators</a> was accepted to ICLR 2026. Congrats to Xinhu and the team!</span>
+		</li>
+		<li>
+			<span class="news-date">Oct 2025</span>
+			<span>Our paper on <a href="https://liralab.usc.edu/comparative-language-feedback/">Active Reward Learning from Language Feedback</a> was accepted to IJRR. Congrats to Eisuke and the team!</span>
+		</li>
+		<li>
+			<span class="news-date">May 2025</span>
+			<span>I joined ARI as a founding research engineer.</span>
+		</li>
+		<li>
+			<span class="news-date">Apr 2025</span>
+			<span><a href="https://navila-bot.github.io/">NaVILA</a> was accepted to RSS 2025. See you in Los Angeles!</span>
+		</li>
+		<li>
+			<span class="news-date">Oct 2024</span>
+			<span>Our paper on <a href="http://liralab.usc.edu/comparative-language-feedback/">Learning from Comparative Language Feedback</a> was accepted to CoRL 2024!</span>
+		</li>
+		<li>
+			<span class="news-date">Jan 2024</span>
+			<span>Our paper on <a href="https://sites.google.com/view/obst-avoid-swarm-rl">Quadrotors Collision Avoidance and Local Navigation</a> was accepted to ICRA 2024!</span>
 		</li>
 	</ul>
-	<div class="content-div"></div>
-</div>
+</section>
 
-
-<div class="container">
-	<!-- publications come here -->
-	<div class="pub-title-row">
-		<h3> Publications</h3>
-		<span class="pub-toggle-wrap">
-			<button type="button" class="pub-toggle-link active" data-panel="selected" aria-pressed="true" aria-controls="pub-selected-panel" id="btn-pub-selected"> [Selected] </button>
-			<button type="button" class="pub-toggle-link" data-panel="all" aria-pressed="false" aria-controls="pub-all-panel" id="btn-pub-all"> [All] </button>
+<section>
+	<div class="section-head">
+		<h2>Publications</h2>
+		<span>
+			<button type="button" class="pub-toggle active" data-panel="selected" aria-pressed="true" aria-controls="pub-list" id="btn-pub-selected">[Selected]</button>
+			<button type="button" class="pub-toggle" data-panel="all" aria-pressed="false" aria-controls="pub-list" id="btn-pub-all">[All]</button>
 		</span>
 	</div>
-	<font size="3" style="font-weight:normal">&nbsp; * denotes equal contribution, † denotes equal advising</font>
-	<!---- Last Update: May 1, 2026 ---->
-	<div class="small-div"></div>
-	<div class="small-div"></div>
-	<div id="pub-selected-panel">
-	<!------------------------- NaVILA --------------------------------->
-	<div class="row align-items-center">
-		<div class="col-md-3 align-column-center">
-			<center>
-				<img class="img-fluid" src="res/figs/navila_teaser.jpg"
-							style="border-radius:4px; border: 1.5px" width="96%" alt="">
-			</center>
-		</div>
-		<div class="col-md-9">
-			<font size="4"> <b> NaVILA: Legged Robot Vision-Language-Action Model for Navigation </b></font><br>
-			<font size="3">
-				<a href="https://www.anjiecheng.me/" target="_blank">An-Chieh Cheng</a><sup>*</sup>,
-				<a href="https://yandongji.github.io/" target="_blank">Yandong Ji</a><sup>*</sup>,
-				<b>Zhaojing Yang</b><sup>*</sup>,
-				<a href="https://www.semanticscholar.org/author/Gongye-Zaitian/2304326733" target="_blank">Zaitian Gongye</a>,
-				<a href="https://maureenzou.github.io/" target="_blank">Xueyan Zou</a>,
-				<a href="https://jankautz.com/" target="_blank">Jan Kautz</a>,
-				<a href="https://ebiyik.github.io/" target="_blank">Erdem Bıyık</a>,
-				<a href="https://hongxu-yin.github.io/" target="_blank">Hongxu Yin</a><sup>†</sup>,
-				<a href="https://sifeiliu.net/" target="_blank">Sifei Liu</a><sup>†</sup>,
-				<a href="https://xiaolonw.github.io/" target="_blank">Xiaolong Wang</a><sup>†</sup>
-			</font>
-			<br>
-			RSS 2025
-			<br>
-			<a href="https://arxiv.org/abs/2412.04453" target="_blank"> [Paper] </a>
-			<a href="https://github.com/AnjieCheng/NaVILA" target="_blank"> [VLA Code] </a>
-			<a href="https://github.com/yang-zj1026/legged-loco" target="_blank"> [Locomotion Code] </a>
-			<a href="https://navila-bot.github.io/" target="_blank"> [Website] </a>
-		</div>
-	</div>
-	<div class="content-div"></div>
+	<p class="pub-note">* denotes equal contribution, † denotes equal advising</p>
+	<!-- Last Update: May 1, 2026 -->
 
-	<!------------------------- CoRL 24 --------------------------------->
-	<div class="row align-items-center">
-		<div class="col-md-3 align-column-center">
-			<center>
-				<img class="img-fluid" src="res/figs/comp_lang.png"
-							style="border-radius:5px" width="98%" alt="">
-			</center>
-		</div>
-		<div class="col-md-9">
-			<font size="4"> <b> Trajectory Improvement and Reward Learning from Comparative Language Feedback </b></font><br>
-			<font size="3">
-				<b>Zhaojing Yang</b>,
-				<a href="https://scholar.google.com/citations?user=AalqHJ4AAAAJ&hl=en" target="_blank">Miru Jun</a>,
-				<a href="https://www.linkedin.com/in/jeremy-tien/" target="_blank">Jeremy Tien</a>,
-				<a href="https://people.eecs.berkeley.edu/~russell/" target="_blank">Stuart Russell</a>,
-				<a href="https://people.eecs.berkeley.edu/~anca/" target="_blank">Anca Dragan</a>,
-				<a href="https://ebiyik.github.io" target="_blank">Erdem Bıyık</a>
-			</font>
-			<br>
-			HRI 2024 Human-Interactive Robot Learning Workshop
-			<br>
-			CoRL 2024
-			<br>
-			<a href="https://arxiv.org/abs/2410.06401" target="_blank"> [Paper] </a>
-			<a href="https://github.com/USC-Lira/language-preference-learning" target="_blank"> [Code] </a>
-			<a href="http://liralab.usc.edu/comparative-language-feedback/" target="_blank"> [Website] </a>
-		</div>
-	</div>
-	<div class="content-div"></div>
+	<!-- Each paper is one <article class="pub">. Add the "selected" class to also show it under [Selected]. -->
+	<div id="pub-list" class="show-selected">
 
-	<!------------------------- ICRA 24 --------------------------------->
-	<div class="row align-items-center">
-		<div class="col-md-3 align-column-center">
-			<center>
-				<img class="img-fluid" src="res/figs/quad_avoid.png"
-							style="border-radius:4px; border: 1px" width="96%" alt="">
-			</center>
+	<!-- ICLR 2026: Constrained demonstrators -->
+	<article class="pub">
+		<div class="pub-thumb">
+			<img class="framed" src="res/figs/constrained_teaser.webp" alt="Learning from Constrained Demonstrators teaser" loading="lazy">
 		</div>
-		<div class="col-md-9">
-			<font size="4"> <b> Collision Avoidance and Navigation for a Quadrotor Swarm Using End-to-end Deep Reinforcement Learning </b></font><br>
-			<font size="3">
-				<a href="https://zhehui-huang.github.io" target="_blank">Zhehui Huang</a><sup>*</sup>,
-				<b>Zhaojing Yang</b><sup>*</sup>,
-				<a href="https://www.linkedin.com/in/rahulkrupani/" target="_blank">Rahul Krupani</a>,
-				<a href="https://baskin.me" target="_blank">Baskın Şenbaşlar</a>,
-				<a href="https://sumeetbatra.github.io" target="_blank">Sumeet Batra</a>,
-				<a href="https://uscresl.org/principal-investigator/" target="_blank">Gaurav S. Sukhatme</a>
-			</font>
-			<br>
-			ICRA 2024<br>
-			<a href="https://arxiv.org/abs/2309.13285" target="_blank"> [Paper] </a>
-			<a href="https://github.com/Zhehui-Huang/quad-swarm-rl" target="_blank"> [Code] </a>
-			<a href="https://sites.google.com/view/obst-avoid-swarm-rl" target="_blank"> [Website] </a>
-		</div>
-	</div>
-
-	<div class="content-div"></div>
-	</div>
-
-	<div id="pub-all-panel" class="pub-panel-hidden">
-	<!------------------------- ICLR 26 Constrained demonstrators --------------------------------->
-	<div class="row align-items-center">
-		<div class="col-md-3 align-column-center">
-			<center>
-				<div style="width:90%; aspect-ratio:7/4; max-height:270px; margin:0 auto; background:transparent; border-radius:4px; border:1.5px solid #ccc; overflow:hidden; display:flex; align-items:center; justify-content:center;">
-					<img src="res/figs/constrained_teaser.png" alt=""
-						style="width:100%; height:100%; object-fit:contain; object-position:center;">
-				</div>
-			</center>
-		</div>
-		<div class="col-md-9">
-			<font size="4"> <b> When a Robot is More Capable than a Human: Learning from Constrained Demonstrators </b></font><br>
-			<font size="3">
+		<div class="pub-body">
+			<h3 class="pub-title">When a Robot is More Capable than a Human: Learning from Constrained Demonstrators</h3>
+			<p class="pub-authors">
 				<a href="https://xhlsgit.github.io/" target="_blank">Xinhu Li</a>,
 				<a href="https://ayushj240.github.io/" target="_blank">Ayush Jain</a>,
 				<b>Zhaojing Yang</b>,
 				<a href="https://ygtkorkmaz.github.io/" target="_blank">Yigit Korkmaz</a>,
 				<a href="https://ebiyik.github.io" target="_blank">Erdem Bıyık</a>
-			</font>
-			<br>
-			ICLR 2026
-			<br>
-			<a href="https://arxiv.org/pdf/2510.09096" target="_blank"> [Paper] </a>
-			<a href="https://arxiv.org/abs/2510.09096" target="_blank"> [arXiv] </a>
-			<a href="https://sites.google.com/view/constrainedexpert" target="_blank"> [Website] </a>
+			</p>
+			<p class="pub-venue">ICLR 2026</p>
+			<div class="link-row">
+				<a href="https://arxiv.org/pdf/2510.09096" target="_blank">[Paper]</a>
+				<a href="https://arxiv.org/abs/2510.09096" target="_blank">[arXiv]</a>
+				<a href="https://sites.google.com/view/constrainedexpert" target="_blank">[Website]</a>
+			</div>
 		</div>
-	</div>
-	<div class="content-div"></div>
-	<!------------------------- Active Learning --------------------------------->
-	<div class="row align-items-center">
-		<div class="col-md-3 align-column-center">
-			<center>
-				<img class="img-fluid" src="res/figs/active_lang_teaser.gif"
-							style="border-radius:4px; border: 1.5px" width="75%" alt="">
-			</center>
+	</article>
+
+	<!-- IJRR: Active reward learning -->
+	<article class="pub">
+		<div class="pub-thumb">
+			<video src="res/figs/active_lang_teaser.mp4" autoplay loop muted playsinline aria-label="Active Reward Learning teaser"></video>
 		</div>
-		<div class="col-md-9">
-			<font size="4"> <b> Active Reward Learning and Iterative Trajectory Improvement from 
-				Comparative Language Feedback </b></font><br>
-			<font size="3">
+		<div class="pub-body">
+			<h3 class="pub-title">Active Reward Learning and Iterative Trajectory Improvement from Comparative Language Feedback</h3>
+			<p class="pub-authors">
 				<a href="https://ei5uke.github.io/" target="_blank">Eisuke Hirota</a><sup>*</sup>,
 				<b>Zhaojing Yang</b><sup>*</sup>,
 				<a href="https://misoshiruseijin.github.io/" target="_blank">Ayano Hiranaka</a>,
@@ -324,27 +313,24 @@
 				<a href="https://people.eecs.berkeley.edu/~russell/" target="_blank">Stuart Russell</a>,
 				<a href="https://people.eecs.berkeley.edu/~anca/" target="_blank">Anca Dragan</a>,
 				<a href="https://ebiyik.github.io" target="_blank">Erdem Bıyık</a>
-			</font>
-			<br>
-			IJRR
-			<br>
-			<a href="/res/pdf/2025_IJRR_Active_Reward_Learning.pdf" target="_blank"> [Paper] </a>
-			<a href="https://github.com/USC-Lira/language_active_learning" target="_blank"> [Code] </a>
-			<a href="http://liralab.usc.edu/comparative-language-feedback/" target="_blank"> [Website] </a>
+			</p>
+			<p class="pub-venue">IJRR</p>
+			<div class="link-row">
+				<a href="/res/pdf/IJRR_2025_Active_Language_Reward_Learning.pdf" target="_blank">[Paper]</a>
+				<a href="https://github.com/USC-Lira/language_active_learning" target="_blank">[Code]</a>
+				<a href="http://liralab.usc.edu/comparative-language-feedback/" target="_blank">[Website]</a>
+			</div>
 		</div>
-	</div>
-	<div class="content-div"></div>
-	<!------------------------- NaVILA --------------------------------->
-	<div class="row align-items-center">
-		<div class="col-md-3 align-column-center">
-			<center>
-				<img class="img-fluid" src="res/figs/navila_teaser.jpg"
-							style="border-radius:4px; border: 1.5px" width="96%" alt="">
-			</center>
+	</article>
+
+	<!-- RSS 2025: NaVILA -->
+	<article class="pub selected">
+		<div class="pub-thumb">
+			<img src="res/figs/navila_teaser.webp" alt="NaVILA teaser" loading="lazy">
 		</div>
-		<div class="col-md-9">
-			<font size="4"> <b> NaVILA: Legged Robot Vision-Language-Action Model for Navigation </b></font><br>
-			<font size="3">
+		<div class="pub-body">
+			<h3 class="pub-title">NaVILA: Legged Robot Vision-Language-Action Model for Navigation</h3>
+			<p class="pub-authors">
 				<a href="https://www.anjiecheng.me/" target="_blank">An-Chieh Cheng</a><sup>*</sup>,
 				<a href="https://yandongji.github.io/" target="_blank">Yandong Ji</a><sup>*</sup>,
 				<b>Zhaojing Yang</b><sup>*</sup>,
@@ -355,88 +341,74 @@
 				<a href="https://hongxu-yin.github.io/" target="_blank">Hongxu Yin</a><sup>†</sup>,
 				<a href="https://sifeiliu.net/" target="_blank">Sifei Liu</a><sup>†</sup>,
 				<a href="https://xiaolonw.github.io/" target="_blank">Xiaolong Wang</a><sup>†</sup>
-			</font>
-			<br>
-			RSS 2025
-			<br>
-			<a href="https://arxiv.org/abs/2412.04453" target="_blank"> [Paper] </a>
-			<a href="https://github.com/AnjieCheng/NaVILA" target="_blank"> [VLA Code] </a>
-			<a href="https://github.com/yang-zj1026/legged-loco" target="_blank"> [Locomotion Code] </a>
-			<a href="https://navila-bot.github.io/" target="_blank"> [Website] </a>
+			</p>
+			<p class="pub-venue">RSS 2025</p>
+			<div class="link-row">
+				<a href="https://arxiv.org/abs/2412.04453" target="_blank">[Paper]</a>
+				<a href="https://github.com/AnjieCheng/NaVILA" target="_blank">[VLA Code]</a>
+				<a href="https://github.com/yang-zj1026/legged-loco" target="_blank">[Locomotion Code]</a>
+				<a href="https://navila-bot.github.io/" target="_blank">[Website]</a>
+			</div>
 		</div>
-	</div>
-	<div class="content-div"></div>
+	</article>
 
-	<!------------------------- CoRL 24 --------------------------------->
-	<div class="row align-items-center">
-		<div class="col-md-3 align-column-center">
-			<center>
-				<img class="img-fluid" src="res/figs/comp_lang.png"
-							style="border-radius:5px" width="98%" alt="">
-			</center>
+	<!-- CoRL 2024: Comparative language feedback -->
+	<article class="pub selected">
+		<div class="pub-thumb">
+			<img src="res/figs/comp_lang.webp" alt="Comparative Language Feedback teaser" loading="lazy">
 		</div>
-		<div class="col-md-9">
-			<font size="4"> <b> Trajectory Improvement and Reward Learning from Comparative Language Feedback </b></font><br>
-			<font size="3">
+		<div class="pub-body">
+			<h3 class="pub-title">Trajectory Improvement and Reward Learning from Comparative Language Feedback</h3>
+			<p class="pub-authors">
 				<b>Zhaojing Yang</b>,
 				<a href="https://scholar.google.com/citations?user=AalqHJ4AAAAJ&hl=en" target="_blank">Miru Jun</a>,
 				<a href="https://www.linkedin.com/in/jeremy-tien/" target="_blank">Jeremy Tien</a>,
 				<a href="https://people.eecs.berkeley.edu/~russell/" target="_blank">Stuart Russell</a>,
 				<a href="https://people.eecs.berkeley.edu/~anca/" target="_blank">Anca Dragan</a>,
 				<a href="https://ebiyik.github.io" target="_blank">Erdem Bıyık</a>
-			</font>
-			<br>
-			HRI 2024 Human-Interactive Robot Learning Workshop
-			<br>
-			CoRL 2024
-			<br>
-			<a href="https://arxiv.org/abs/2410.06401" target="_blank"> [Paper] </a>
-			<a href="https://github.com/USC-Lira/language-preference-learning" target="_blank"> [Code] </a>
-			<a href="http://liralab.usc.edu/comparative-language-feedback/" target="_blank"> [Website] </a>
+			</p>
+			<p class="pub-venue">HRI 2024 Human-Interactive Robot Learning Workshop</p>
+			<p class="pub-venue">CoRL 2024</p>
+			<div class="link-row">
+				<a href="https://arxiv.org/abs/2410.06401" target="_blank">[Paper]</a>
+				<a href="https://github.com/USC-Lira/language-preference-learning" target="_blank">[Code]</a>
+				<a href="http://liralab.usc.edu/comparative-language-feedback/" target="_blank">[Website]</a>
+			</div>
 		</div>
-	</div>
-	<div class="content-div"></div>
+	</article>
 
-	<!------------------------- ICRA 24 --------------------------------->
-	<div class="row align-items-center">
-		<div class="col-md-3 align-column-center">
-			<center>
-				<img class="img-fluid" src="res/figs/quad_avoid.png"
-							style="border-radius:4px; border: 1px" width="96%" alt="">
-			</center>
+	<!-- ICRA 2024: Quadrotor swarm collision avoidance -->
+	<article class="pub selected">
+		<div class="pub-thumb">
+			<img src="res/figs/quad_avoid.webp" alt="Quadrotor swarm collision avoidance teaser" loading="lazy">
 		</div>
-		<div class="col-md-9">
-			<font size="4"> <b> Collision Avoidance and Navigation for a Quadrotor Swarm Using End-to-end Deep Reinforcement Learning </b></font><br>
-			<font size="3">
+		<div class="pub-body">
+			<h3 class="pub-title">Collision Avoidance and Navigation for a Quadrotor Swarm Using End-to-end Deep Reinforcement Learning</h3>
+			<p class="pub-authors">
 				<a href="https://zhehui-huang.github.io" target="_blank">Zhehui Huang</a><sup>*</sup>,
 				<b>Zhaojing Yang</b><sup>*</sup>,
 				<a href="https://www.linkedin.com/in/rahulkrupani/" target="_blank">Rahul Krupani</a>,
 				<a href="https://baskin.me" target="_blank">Baskın Şenbaşlar</a>,
 				<a href="https://sumeetbatra.github.io" target="_blank">Sumeet Batra</a>,
 				<a href="https://uscresl.org/principal-investigator/" target="_blank">Gaurav S. Sukhatme</a>
-			</font>
-			<br>
-			ICRA 2024<br>
-			<a href="https://arxiv.org/abs/2309.13285" target="_blank"> [Paper] </a>
-			<a href="https://github.com/Zhehui-Huang/quad-swarm-rl" target="_blank"> [Code] </a>
-			<a href="https://sites.google.com/view/obst-avoid-swarm-rl" target="_blank"> [Website] </a>
+			</p>
+			<p class="pub-venue">ICRA 2024</p>
+			<div class="link-row">
+				<a href="https://arxiv.org/abs/2309.13285" target="_blank">[Paper]</a>
+				<a href="https://github.com/Zhehui-Huang/quad-swarm-rl" target="_blank">[Code]</a>
+				<a href="https://sites.google.com/view/obst-avoid-swarm-rl" target="_blank">[Website]</a>
+			</div>
 		</div>
-	</div>
+	</article>
 
-	<div class="content-div"></div>
-
-	<!------------------------- ICRA 23 Workshop --------------------------------->
-	<div class="row align-items-center">
-		<div class="col-md-3 align-column-center">
-			<center>
-				<img class="img-fluid" src="res/figs/quad_sim.png"
-							style="border-radius:4px; border: 1px" width="96%" alt="">
-			</center>
+	<!-- ICRA 2023 Workshop: QuadSwarm -->
+	<article class="pub">
+		<div class="pub-thumb">
+			<img src="res/figs/quad_sim.webp" alt="QuadSwarm simulator teaser" loading="lazy">
 		</div>
-		<div class="col-md-9">
-			<font size="4"> <b> QuadSwarm: A Modular Multi-Quadrotor Simulator for Deep
-				Reinforcement Learning with Direct Thrust Control </b></font><br>
-			<font size="3">
+		<div class="pub-body">
+			<h3 class="pub-title">QuadSwarm: A Modular Multi-Quadrotor Simulator for Deep Reinforcement Learning with Direct Thrust Control</h3>
+			<p class="pub-authors">
 				<a href="https://zhehui-huang.github.io" target="_blank">Zhehui Huang</a>,
 				<a href="https://sumeetbatra.github.io" target="_blank">Sumeet Batra</a>,
 				<a href="https://www.linkedin.com/in/taotaotaochen/" target="_blank">Tao Chen</a>,
@@ -448,50 +420,46 @@
 				<a href="https://baskin.me" target="_blank">Baskın Şenbaşlar</a>,
 				<b>Zhaojing Yang</b>,
 				<a href="https://uscresl.org/principal-investigator/" target="_blank">Gaurav S. Sukhatme</a>
-			</font>
-			<br>
-			ICRA 2023 The Role of Robotics Simulators for Unmanned Aerial Vehicles Workshop<br>
-			<a href="https://imrclab.github.io/workshop-uav-sims-icra2023/papers/RS4UAVs_paper_16.pdf" target="_blank"> [Paper] </a>
-			<a href="https://github.com/Zhehui-Huang/quad-swarm-rl" target="_blank"> [Code] </a>
+			</p>
+			<p class="pub-venue">ICRA 2023 The Role of Robotics Simulators for Unmanned Aerial Vehicles Workshop</p>
+			<div class="link-row">
+				<a href="https://imrclab.github.io/workshop-uav-sims-icra2023/papers/RS4UAVs_paper_16.pdf" target="_blank">[Paper]</a>
+				<a href="https://github.com/Zhehui-Huang/quad-swarm-rl" target="_blank">[Code]</a>
+			</div>
 		</div>
+	</article>
+
 	</div>
-	</div>
+</section>
 
-</div>
+</main>
 
-<div class="section-div"></div>
-
-<!-- Add this new footer section -->
-<footer class="footer">
-	<div class="container">
-		<hr>
-		<p class="text-muted text-center">
-			<a href="https://github.com/yang-zj1026/yang-zj1026.github.io" target="_blank">Source code</a> | Template adapted from <a href="https://github.com/HaozhiQi/haozhiqi.github.io" target="_blank">here</a>. 
-		</p>
+<footer class="container">
+	<div class="footer">
+		<a href="https://github.com/yang-zj1026/yang-zj1026.github.io" target="_blank">Source code</a>
 	</div>
 </footer>
 
 <script>
 (function () {
-  var selPanel = document.getElementById('pub-selected-panel');
-  var allPanel = document.getElementById('pub-all-panel');
-  var btnSel = document.getElementById('btn-pub-selected');
-  var btnAll = document.getElementById('btn-pub-all');
-  if (!selPanel || !allPanel || !btnSel || !btnAll) return;
+	var list = document.getElementById('pub-list');
+	var btnSel = document.getElementById('btn-pub-selected');
+	var btnAll = document.getElementById('btn-pub-all');
+	if (!list || !btnSel || !btnAll) return;
 
-  function showPanel(which) {
-    var showSel = which === 'selected';
-    selPanel.classList.toggle('pub-panel-hidden', !showSel);
-    allPanel.classList.toggle('pub-panel-hidden', showSel);
-    btnSel.classList.toggle('active', showSel);
-    btnAll.classList.toggle('active', !showSel);
-    btnSel.setAttribute('aria-pressed', showSel ? 'true' : 'false');
-    btnAll.setAttribute('aria-pressed', showSel ? 'false' : 'true');
-  }
+	function showPanel(which) {
+		var showSel = which === 'selected';
+		list.classList.toggle('show-selected', showSel);
+		btnSel.classList.toggle('active', showSel);
+		btnAll.classList.toggle('active', !showSel);
+		btnSel.setAttribute('aria-pressed', showSel ? 'true' : 'false');
+		btnAll.setAttribute('aria-pressed', showSel ? 'false' : 'true');
+	}
 
-  btnSel.addEventListener('click', function () { showPanel('selected'); });
-  btnAll.addEventListener('click', function () { showPanel('all'); });
+	btnSel.addEventListener('click', function () { showPanel('selected'); });
+	btnAll.addEventListener('click', function () { showPanel('all'); });
 })();
 </script>
 
+</body>
 </html>
